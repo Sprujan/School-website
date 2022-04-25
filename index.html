@@ -1,71 +1,130 @@
+<!DOCTYPE html>
 <html>
 
 <head>
+    <title>School Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
-    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" type="text/css" href="style.css">
-
-    <title>My School Website</title>
 </head>
 
 <body>
-    <nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999">
+    <!--Assuming "Menu with Marquee" and "Contact Us" has been completed in Project 68 -->
 
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#"> Niraj International School </a>
+    <div class="container">
+        <!--Campus Life-->
+        <div class="page-header" id="campus_life">
+            <h2 class="text-capitalize">Campus Life</h2>
+
+            <div class="row">
+                <!--1st Campus Life-->
+                <div class="travel_mainDiv">
+                    <img class="img-responsive" src="download (1).jfif">
+                    <h4 class="text-capitalize"><kbd> School main Entrance </kbd></h4>
+                    <hr>
+                    <h5 class="text-success text-left text-capitalize"> Was established in 2007 </h5>
+                    <p class="text-muted text-left"> Niraj International School is alternatively also known as NIS.  </p>
+                </div>
+                <!--2nd Campus Life-->
+                <div class="travel_mainDiv">
+                    <!--Give appropriate class below for the image img-responsive-->
+                    <img class="img-responsive" src="activities.jpg">
+                    <h4 class="text-capitalize"><kbd> Activities </kbd></h4>
+                    <hr>
+                    <!--Give classes below text-success text-left-->
+                    <h5 class="text-capitalize"> Sports: Basketball </h5>
+                    <p class="text-muted text-left"> Fun and growth go hand in hand in all our programmes. Extra Curricular activities play important role in our school. </p>
+                </div>
+                <!--3rd Campus life-->
+                <div class="travel_mainDiv">
+                    <img class="img-responsive" src="fa.jpg">
+                    <!-- Give text-capitalize below to make the first letters in Capitals-->
+                    <h4 class=""><kbd> Facilities </kbd></h4>
+                    <hr>
+                    <h5 class="text-success text-left text-capitalize"> Food </h5>
+                    <!-- Give text-muted below to show the text in grey color-->
+                    <p class="text-left"> The school provides nutritious and healthy food for the students everyday. </p>
+                </div>
+
+            </div>
+        </div>
+        <!--Achievements-->
+        <div class="page-header" id="achievements">
+            <h2 class="text-capitalize">School achievements</h2>
+        </div>
+        <div class="bg-primary movie_head" data-toggle="collapse" data-target="#school_achievement1">
+            TOP 20 IMPACTFUL ACHIEVERS UNDER 20 <i class="fa fa-sort-desc"></i>
+        </div>
+        <!--1st Achievement-->
+        <div id="school_achievement1" class="collapse">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="achievementsID">
+                <img src="Vidhi.jpg" class="img-responsive img-thumbnail">
+            </div>
+
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 movie_text">
+                <h5 class="text-success text-left text-capitalize">
+                </h5>
+                <p></p>
+            </div>
+        </div>
+        <!--2nd Achievement--->
+
+        <div class="bg-primary  movie_head" data-toggle="collapse" data-target="#school_achievement3">
+            Grade 10 toppers<i class="fa fa-sort-desc"></i>
         </div>
 
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-                <li><a href="#">Campus life</a></li>
-                <li><a href="#">Achievements</a></li>
-                <li><a href="#">What’s New</a></li>
-                <li><a href="#">Alumni</a></li>
-                <li><a href="#">Contact us</a></li>
-            </ul>
+        <div id="school_achievement3" class="collapse">
+            <!-- Add bootstrap col-lg-3 col-md-3 col-sm-3 col-xs-12-->
+            <div class="" id="achievementsID">
+                <img src="10th-Result-poster.jpeg" class="img-responsive img-thumbnail">
+            </div>
+
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 movie_text">
+              <h5 class="text-left text-success text-capitalize">
+                </h5>
+                <p></p>
+            </div>
         </div>
 
-    </nav>
-
-    <div class="annoucment">
-        <marquee id="school" onmouseover="this.stop();" onmouseout="this.start();">
-            *** Feel free to ask queries on info.nirajinternationalschool@gmail.com ***
-
-        </marquee>
     </div>
-    
-             <br><br>
-    <iframe width="853" height="480" src="https://www.youtube.com/embed/mReGJH-k2jA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+    <!--People at NIS-->
+    <div class="page-header" id="people">
+        <h2 class="text-capitalize">People at NIS</h2>
+
+        <div class="row">
+            <!--What's new #1-->
+            <div class="travel_mainDiv">
+                <img class="img-responsive" src="people.jpg">
+                <h4 class="text-capitalize"><kbd> People </kbd></h4>
+                <hr>
+                <h5 class="text-success text-left text-capitalize"> Teachers </h5>
+                <p class="text-muted text-left"> NIS has a team of carefully chosen qualified and experienced teachers, who take great pleasure in guiding each student with personal attention and devotion. To add a truly international dimension, we have an established policy of inviting guest teachers from different countries to our school. We have had guest teachers from Poland, Czechoslovakia, USA, Greece, UK and Lithuania coming to us via AIESEC (Association internationale des étudiants en sciences économiques et commerciales) programme.
+
+                    Exchange interns help in providing a global perspective to our students by interacting with them and conducting various workshops on various issues. </p>
+            </div>
+
+            <!--What's new #2-->
+            <div class="travel_mainDiv">
+                <img class="img-responsive" src="Mr-Gavish-Reddy.jpg">
+                <h4 class="text-capitalize"><kbd> Director </kbd></h4>
+                <hr>
+                <h5 class="text-success text-left text-capitalize"> 
+                    Mr. B. GAVISH REDDY </h5>
+                    A dynamic personality, he is keenly interested in developing innovative projects on par with global standards. He is well qualified and holds a degree in Commerce from Hyderabad. He also has a P.G Diploma from the University of Hull, an MBA from Oxford Brooks University, U.K. and is a member of H.C.I.M.A., U.K.
+
+As the Executive Director, Mr. Gavish Reddy has a clear vision to make Niraj International School, a truly world-class school.
+                <p class="text-muted text-left">
+            </div>
+
+        </div>
+    </div>
+    <div id="footer"></div>
 </body>
- <div class="container">
- <h2 class="text-capitalize">contact us</h2>
-<div id="map">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4610.773555850248!2d78.49206250144165!3d17.591075264589087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb8594b5c50e79%3A0xc020c46ee6e2d53b!2sNiraj%20International%20School!5e0!3m2!1sen!2sus!4v1631624736102!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    
-<div id="details">
-  <img src="download%20(1).jfif" class="img-responsive img-circle col-lg-3 col-md-3 col-sm-3 col-xs-4"> 
-<h3> Principal name: </h3>
-<h4> Mrs.Roja Paul K </h4>
-<div class="contact_1">
-<a href="mailto:info.nirajinternationalschool@gmail.com?Subject=Hi!">       
-               info.nirajinternationalschool@gmail.com
-</a>
-</div>
-</div>
-</div>
-</div>
-    
+
 </html>
